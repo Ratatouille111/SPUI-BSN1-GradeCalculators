@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grade Calculators</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Grade Calculators</h1>
+    
+    <!-- Calculator 1: Raw Final Grade -->
+    <section class="calculator">
+      <h2>Raw Final Grade</h2>
+      <form id="final-grade-form">
+        <label for="midterm-grade">Midterm Grade (1/3):</label>
+        <input type="number" id="midterm-grade" required>
+        
+        <label for="raw-final-grade">Raw Final Grade (2/3):</label>
+        <input type="number" id="raw-final-grade" required>
+        
+        <div id="final-grade-result" class="result"></div>
+      </form>
+    </section>
+
+    <!-- Calculator 2: Raw Grade Calculation -->
+    <section class="calculator">
+      <h2>Raw Grade Calculation</h2>
+      <form id="raw-grade-form">
+        <label for="participation-grade">Class Participation (1/3):</label>
+        <input type="number" id="participation-grade" required>
+        
+        <label for="quiz-grade">Quiz Grade (1/3):</label>
+        <input type="number" id="quiz-grade" required>
+        
+        <label for="exam-grade">Final Exam (1/3):</label>
+        <input type="number" id="exam-grade" required>
+        
+        <div id="raw-grade-result" class="result"></div>
+      </form>
+    </section>
+
+    <!-- Calculator 3: Lec/Lab Grade -->
+    <section class="calculator">
+      <h2>Lec/Lab Grade</h2>
+      <form id="lec-lab-form">
+        <label for="lec-grade">Lecture Grade (60%):</label>
+        <input type="number" id="lec-grade" required>
+        
+        <label for="lab-grade">Lab Grade (40%):</label>
+        <input type="number" id="lab-grade" required>
+        
+        <div id="lec-lab-result" class="result"></div>
+      </form>
+    </section>
+  </div>
+  
+  <script src="/app.js"></script>
+</body>
+</html>
